@@ -19,12 +19,36 @@
             margin: 0 auto;
             padding: 24px 0;
         }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 16px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .box-gray {
+            background-color: gray;
+        }
+
+        .box-yellow {
+            background-color: yellow;
+        }
+
+        .box.blue {
+            background-color: blue;
+        }
+
+        .toggle-button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
     </style>
     <script>
-        console.log("halo semua - atas");
+        // console.log("halo semua - atas");
 
-        const juduldariatas = document.getElementById("title").innerHTML
-        console.log(juduldariatas);
+        // const juduldariatas = document.getElementById("title").innerHTML
+        // console.log(juduldariatas);
 
     </script>
 </head>
@@ -32,6 +56,10 @@
 <body>
     <div class="container">
         <h1 id="title">belajar javascript dasar</h1>
+        <div class="box box-gray" id="box"></div>
+        <button class="toggle-button" id="toggle-button" type="button">
+            Ganti warna kotak
+        </button>
     </div>
 
     <script>
@@ -40,6 +68,7 @@
         console.log(judul);
 
     </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
